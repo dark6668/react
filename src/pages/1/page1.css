@@ -1,0 +1,287 @@
+/*
+login
+*/
+.containerForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: end;
+
+}
+
+input {
+  margin-left: 10px;
+}
+
+/*
+
+*/
+
+.container {
+
+  display: flex;
+  justify-content: center;
+
+}
+
+.container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: rgba(128, 128, 128, 0.291)
+}
+
+.container2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.imgDavid {
+  display: flex;
+  justify-content: center;
+  background-color: blue;
+
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 60px;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+img {
+  width: 600px;
+  height: 400px;
+}
+
+.containerPersonalDetails {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+
+
+}
+
+button {
+  font-size: 40px;
+  background-color: rgb(0, 255, 251);
+}
+
+
+
+.button {
+  display: flex;
+  margin-top: 40px;
+  gap: 10px;
+
+}
+
+.links img {
+  width: 40px;
+  height: 40px;
+
+}
+
+/*
+page 2
+*/
+.containerContainerContact {
+  display: flex;
+  margin-top: 100px;
+  flex-wrap: wrap;
+}
+
+.containerContact {
+  display: flex;
+  margin-left: 50px;
+  flex-direction: column;
+  position: relative;
+  justify-items: start;
+
+}
+
+.soldOut {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: white;
+  padding: 5px 7px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.StarImg {
+  display: flex;
+  height: 40px;
+
+  width: 40px;
+}
+
+
+.containerHeader {
+  display: flex;
+  background-color: rgb(240, 240, 245);
+  justify-content: space-between;
+  font-size: 30px;
+  align-items: center;
+  box-shadow: 5px 10px rgb(224, 224, 235);
+  margin-bottom: 70px;
+}
+
+
+.containerHeader a {
+  margin-left: 40px;
+  text-decoration: none;
+  color: black;
+}
+
+.containerHeader img {
+
+  width: 80px;
+  height: 80px;
+
+}
+
+.containerContact img {
+
+  width: 500px;
+  height: 400px;
+}
+
+.containerContactImg {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: flex-end;
+  margin-top: 20px;
+}
+
+.containerContactImg img {
+  width: 30px;
+  height: 30px;
+}
+
+.containerContactInfo {
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+/*
+Page3
+*/
+.travels-container {
+  column-gap: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.travel-container {
+  font-size: 30px;
+  font-weight: bold;
+  display: grid;
+  grid-template-columns: repeat(2fr 3);
+  width: 500px;
+
+
+
+}
+
+.travels-container img {
+  width: 400px;
+  height: 600px;
+  margin-bottom: 40px;
+}
+
+.title {
+  display: flex;
+  gap: 10px;
+  height: 50px;
+}
+
+.title img {
+  width: 50px;
+  height: 50px;
+}
+
+/* page 4 */
+
+main {
+  padding: 36px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  color: white;
+  padding: 20px;
+}
+
+
+.header--title {
+  font-size: 1.25rem;
+  margin-right: auto;
+}
+
+
+.form {
+  display: grid;
+  grid-template: 40px 40px / 1fr 1fr;
+  gap: 17px;
+}
+
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img {
+  width: 400px;
+  height: 400;
+}
+
+.memeImg {
+
+  width: 800px;
+  height: 800px;
+}
+
+/*
+page 5
+*/
+
+
+.countNumber {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+}
