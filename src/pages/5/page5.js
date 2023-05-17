@@ -13,29 +13,31 @@ export default function Page5(props) {
     let toogle =(id) =>{
      
          SetBoxs( prevBoxs => {
-            console.log(prevBoxs)
-            const newBoxs = []
-            for (let  i =0; i < prevBoxs.length; i++){  
-            const currentBox= prevBoxs[i]
         
-      if(currentBox.id === id){ 
-        const upDatedBox = {
-        
-            ...currentBox,
-             on: !currentBox.on
-        }    
-              newBoxs.push(upDatedBox)
-            }
-        else{
-            newBoxs.push(currentBox)
+      
+         let newArraybox =[]
 
-        }   
+for (let i= 0; i<prevBoxs.length; i++)
+{
+    let currantBox = prevBoxs[i];
+
+if (currantBox.id ===  id){
+let updateBox ={
+...currantBox,
+on: !currantBox.on
+}
+    newArraybox.push(updateBox)
+
+}
+else{
+
+    newArraybox.push(currantBox)
+}
+}
+return newArraybox
+})
 
     }
-    return newBoxs
-        }
-             )
-            }
     const listBox =  boxs.map(item =>{
 
 

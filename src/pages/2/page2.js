@@ -39,14 +39,15 @@ export default function Page2() {
     return (
 
         <div>
-            <Header2 />
+            <Header2  />
 
             <div className='containerContainerContact'>
-
-                {airbnb}
+           
+                {airbnb  }
           
 
             </div>
+            
         </div>
 
 

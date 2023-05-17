@@ -11,7 +11,7 @@ export default [
         cost: "₪1,672 for night",
         openSpots: 1
 
-        , star: true
+        , star: false
     }
     ,
     {
@@ -22,7 +22,7 @@ export default [
         data: " Sep 17 – 22",
         cost: "₪428 for night",
         openSpots: 20
-        , star: true
+        , star: false
     },
 
     {
@@ -35,7 +35,7 @@ export default [
         cost: "₪283 for night",
         openSpots: 1
 
-        , star: true
+        , star: false
     },
     {
 
@@ -46,7 +46,7 @@ export default [
         data: "Jun 18 – 23",
         cost: "₪708 for night",
         openSpots: 5
-        , star: true
+        , star: false
     },
     {
         key: 5,
@@ -56,7 +56,7 @@ export default [
         data: "May 1 – May 6",
         cost: "₪11,335 for night",
         openSpots: 3
-        , star: true
+        , star: false
     },
 
     {
@@ -67,7 +67,7 @@ export default [
         data: " Sep 1 – 10",
         cost: "£238 for night",
         openSpots: 2
-        , star: true
+        , star: false
     }
     , {
 
@@ -78,7 +78,7 @@ export default [
         data: "Jul 12 – 13",
         cost: "£758 for night",
         openSpots: 1
-        , star: true
+        , star: false
     },
 
 
@@ -94,7 +94,7 @@ export default [
 
 
 
-        , star: true
+        , star: false
     },
   
 ]
