@@ -13,7 +13,7 @@ export default function Main() {
                     I studied two courses at the university<br></br>one in philosophy
                     and the other in psychology<br></br>
                     I enlisted  at the end of 2020
-                    to the Air Force<br></br>
+                    to Israel Air Force<br></br>
 
 
                 </section>

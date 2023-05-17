@@ -2,10 +2,12 @@ import React from 'react';
 import Header2 from './Header2';
 import ContainerContact from './img';
 import imgContact from './img-contact';
+
 export default function Page2() {
 
-
-
+        
+    
+    
     let airbnb = imgContact.map(contact => {
 
         return <ContainerContact item={contact} />
@@ -32,7 +34,7 @@ export default function Page2() {
         */
 
     })
-    console.log(airbnb.start)
+ 
 
     return (
 
@@ -42,7 +44,7 @@ export default function Page2() {
             <div className='containerContainerContact'>
 
                 {airbnb}
-
+          
 
             </div>
         </div>

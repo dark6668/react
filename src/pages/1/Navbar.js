@@ -12,9 +12,9 @@ export default function Img() {
                 <div>Frontend Developer</div>
                 <div className="button" >
                     <a href="mailto:sus.sus123456@gmail.com">
-                        <button>Emaill</button></a>
+                        <button>Email</button></a>
                     <a href="https://www.linkedin.com/in/david-haitin-34525b269">
-                        <button>Linkdin</button>
+                        <button>Linkedin</button>
                     </a>
 
                 </div>

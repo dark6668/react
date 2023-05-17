@@ -2,6 +2,33 @@ import React from "react";
 
 export default function Login() {
 
+
+    let  login=()=> {
+        const form = document.querySelector('form');
+        form.click = (event) => { event.preventDefault(); }
+        let mail = document.querySelector('#mail').value
+        let password = document.querySelector('#password').value
+    
+        const user = {
+    
+            mail: 'david@dads',
+            password: "1234"
+        }
+    
+    
+        let info = {
+            mail: mail,
+            password: password
+    
+        }
+        if (info.password === user.password && info.mail === user.mail) {
+    
+            window.open('http://localhost:3000/page1')
+    
+        }
+    }
+    
+
     return (
 
         <div className="containerForm">
@@ -16,33 +43,8 @@ export default function Login() {
 
             </form >
             <button type="submit" onClick={login}>submit</button>
+         
         </div>
     )
-}
-
-
-function login() {
-    const form = document.querySelector('form');
-    form.click = (event) => { event.preventDefault(); }
-    let mail = document.querySelector('#mail').value
-    let password = document.querySelector('#password').value
-
-    const user = {
-
-        mail: 'david@dads',
-        password: "1234"
-    }
-
-
-    let info = {
-        mail: mail,
-        password: password
-
-    }
-    if (info.password === user.password && info.mail === user.mail) {
-
-        window.open('http://localhost:3000/page1')
-
-    }
 }
 

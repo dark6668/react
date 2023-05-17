@@ -285,3 +285,10 @@ page 5
   gap: 10px;
 
 }
+.box12{
+  
+  height: 100px;
+  width: 100px;
+  border: black solid 10px;
+
+}

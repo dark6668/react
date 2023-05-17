@@ -25,12 +25,13 @@ export default function ContainerContact(props) {
     }
 
     let imageStar = imgStar ? "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" : "https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png"
+   let styles = props.item.rating <3 ? "color: green"  :  "color: red" 
     return (
 
 
         <div className="containerContact">
 
-            <img src={props.item.img} alt='Img' />
+            <img  src={props.item.img} alt='Img' />
             {freePlaces && < div className="soldOut">{freePlaces}</div>}
 
             <section>
@@ -38,7 +39,7 @@ export default function ContainerContact(props) {
                 <div className='containerContactImg'>
                     <img onClick={star} src={imageStar} alt='Img'></img>
 
-                    <span> {props.item.rating}  </span>
+                    <span > {props.item.rating}  </span>
                     <span> {props.item.name} </span>
                 </div>
 
