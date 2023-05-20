@@ -12,15 +12,27 @@ export default function Main() {
             topText: "",
             botoomText: "",
             url: "https://www.shutterstock.com/image-vector/internet-meme-isolated-on-white-260nw-1311774755.jpg",
-            name: "david"
-
+            color: ""
 
 
         }
 
     )
-    console.log(randomImg)
+   let changeHandler =(event) =>{
+    let {name,value} = event.target
+    setRandomImg(prevRandomImg => {
 
+
+return{
+...prevRandomImg,
+[name]:value
+
+}
+    })
+
+
+   }
+console.log(randomImg)
     let button = () => {
 
         let meme = allMeme.data.memes
@@ -41,14 +53,22 @@ export default function Main() {
 
             <form className="form">
                 <input
+                onChange={changeHandler}
                     type="text"
                     placeholder="Top text"
-                    className="toptext"
+                    name="topText"
                 />
                 <input
+                onChange={changeHandler}
                     type="text"
                     placeholder="Bottom text"
-                    className="bottomtext"
+                    name="botoomText"
+                />
+                    <input
+                onChange={changeHandler}
+                    type="text"
+                    placeholder="font color"
+                    name="color"
                 />
             </form>
             <div className="img-container">
@@ -57,8 +77,11 @@ export default function Main() {
                 >
                     Get a new meme image 🖼
                 </button>
-                <img className="memeImg" src={randomImg.url} alt={randomImg.name} ></img>
-
+                <div className="memeImg">
+                <img  src={randomImg.url} alt={randomImg.name} ></img>
+                <h1 style={{ color: randomImg.color ? randomImg.color : "black" }}  className= "upper-text">{randomImg.topText}</h1>
+                <h1  style={{ color: randomImg.color ? randomImg.color : "black" }} className="lower-text">{randomImg.botoomText}</h1>
+                </div>
             </div>
 
         </main >

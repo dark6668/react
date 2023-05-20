@@ -1,50 +1,55 @@
 import React from "react";
 
 export default function Login() {
+let [loginData,setLoginData] = React.useState(
+    {
+        userName:"",
+        password:"",
+        confirmPassword:"",
+        checkbox: false
+    })
+
+let formHandler = (event)=>{
+    const {name,value,checked,type} = event.target
+setLoginData(prevLoginData =>{
+return{
+    ...prevLoginData,
+    [name]: type==="checkbox" ? checked : value
 
 
-    let  login=()=> {
-        const form = document.querySelector('form');
-        form.click = (event) => { event.preventDefault(); }
-        let mail = document.querySelector('#mail').value
-        let password = document.querySelector('#password').value
-    
-        const user = {
-    
-            mail: 'david@dads',
-            password: "1234"
-        }
-    
-    
-        let info = {
-            mail: mail,
-            password: password
-    
-        }
-        if (info.password === user.password && info.mail === user.mail) {
-    
-            window.open('http://localhost:3000/page1')
-    
-        }
-    }
-    
+}
 
+})
+
+}
+   let submit = (event) =>{
+event.preventDefault()
+if (loginData.password !== loginData.confirmPassword) {
+    alert("The passwords do not match");
+  } else if (loginData.userName === "david" && loginData.password === "1234") {
+    window.open("http://localhost:3000/page1");
+  } else {
+    alert("The user does not exist in the system");
+  }
+   }
     return (
 
-        <div className="containerForm">
-
-            <form>
-
-                <div>Mail <input id="mail" type="mail" placeholder="david@dads" required></input></div>
-                <div>Password<input id="password" type="password" placeholder="1234" required></input></div>
-
-
-
-
+<div className="form-login">
+   
+            <form onSubmit={submit}>
+            <div className="form-login-item">
+<label>User Name</label> 
+<input onChange={formHandler} type="text" name="userName"placeholder="david" required />
+<label>Password</label>
+<input onChange={formHandler}type={loginData.checkbox ? "text" : "password"} name="password" placeholder="1234" required />
+<label>confirm Password</label>
+<input onChange={formHandler} type={loginData.checkbox ? "text" : "password"} name="confirmPassword" required />
+<div className="input-checkbox"><input onChange={formHandler} type="checkbox" name="checkbox"/><label>Show Password</label> </div>
+<button> Sigh in</button>
+</div>
             </form >
-            <button type="submit" onClick={login}>submit</button>
          
-        </div>
+            </div>
     )
 }
 

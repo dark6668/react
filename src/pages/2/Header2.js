@@ -11,6 +11,7 @@ export default function Header2() {
                 <a href="/page3">Page 3</a>
                 <a href="/page4">Page 4</a>
                 <a href="/page5">Page 5</a>
+                <a href="/page6">Page 6</a>
             </nav>
 
 

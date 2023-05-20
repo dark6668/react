@@ -7,6 +7,7 @@ import Page2 from './pages/2/page2';
 import Page3 from './pages/3/page3';
 import Page4 from './pages/4/page4';
 import Page5 from './pages/5/page5';
+import Page6 from './pages/6/Page6';
 import {
   createBrowserRouter,
   RouterProvider,
@@ -55,6 +56,12 @@ const router = createBrowserRouter([
 
     path: "/page5",
     element: <Page5 />
+
+
+  }, {
+
+    path: "/page6",
+    element: <Page6 />
 
 
   }

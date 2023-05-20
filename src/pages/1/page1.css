@@ -1,26 +1,29 @@
 /*
 login
 */
-.containerForm {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+.form-login{
+
+  display: grid;
   justify-content: center;
-  height: 100vh;
+  align-items: center;
+  grid-template-columns: 150px;
+  height: 1000px;
+ 
 }
 
-form {
+.form-login input{
+  height: 20px;
+  margin: 10px 0 10px 0;
+  width: fit-content;
+  
+}
+.input-checkbox{
   display: flex;
-  flex-direction: column;
-  font-size: 30px;
-  text-align: end;
+  align-items: center;
+
+gap: 10px;
 
 }
-
-input {
-  margin-left: 10px;
-}
-
 /*
 
 */
@@ -266,13 +269,33 @@ img {
   width: 400px;
   height: 400;
 }
+.memeImg{
 
-.memeImg {
+  position: relative;
+}
+.memeImg img{
 
   width: 800px;
   height: 800px;
 }
+.upper-text,.lower-text{
 
+  font-size: 100px;
+
+}
+.upper-text{
+
+  position: absolute;
+  top: -1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.lower-text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /*
 page 5
 */

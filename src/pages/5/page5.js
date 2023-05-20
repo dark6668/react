@@ -1,7 +1,8 @@
 import React from "react";
 import Header2 from "../2/Header2";
 import Number from "./Number";
-
+import JokeData from "./JokeData";
+import Joke from "./Joke";
 import box from "./box";
 import Box from "./boxOnPage5";
 export default function Page5(props) {
@@ -9,35 +10,19 @@ export default function Page5(props) {
     let [arrayList, setArrayLIst] = React.useState([])
     let [text, setText] = React.useState("true")
     let [boxs,SetBoxs] = React.useState(box)
+    let [count, setCount] = React.useState(0)
+
+
 
     let toogle =(id) =>{
      
          SetBoxs( prevBoxs => {
-        
-      
-         let newArraybox =[]
+        return prevBoxs.map(box => {
 
-for (let i= 0; i<prevBoxs.length; i++)
-{
-    let currantBox = prevBoxs[i];
+           return box.id === id ? {...box, on:!box.on} : box
 
-if (currantBox.id ===  id){
-let updateBox ={
-...currantBox,
-on: !currantBox.on
-}
-    newArraybox.push(updateBox)
-
-}
-else{
-
-    newArraybox.push(currantBox)
-}
-}
-return newArraybox
-})
-
-    }
+        })} )}
+    
     const listBox =  boxs.map(item =>{
 
 
@@ -52,13 +37,18 @@ return newArraybox
         setArrayLIst(prevSetArrayList => [...arrayList, `Thing ${arrayList.length + 1} `])
 
     }
+    let restartArray = () =>{
+        setArrayLIst(prevSetArrayList => [])
+
+
+    }
     let arrayElement = arrayList.map(thing => {
 
         return (<p key={thing}>{thing}</p>)
 
     })
 
-    let [count, setCount] = React.useState(0)
+   
 
     let subtract = () => {
 
@@ -75,11 +65,13 @@ return newArraybox
         setCount(prevCount => prevCount = 0)
     }
 
+let joke = JokeData.map (item => {
 
-
-
-    
- 
+return <Joke  key={item.id}
+setup={item.setup} 
+punchline={item.punchline} 
+/>
+})
 
     return (
 
@@ -88,7 +80,7 @@ return newArraybox
 
             <button onClick={button}>{text ? "Yes" : "No"}</button>
             <button onClick={button2}>Add Array</button>
-
+            <button onClick={restartArray}>restart Array</button>
             {arrayElement}
          
             <div className="countNumber">
@@ -97,12 +89,15 @@ return newArraybox
                 <Number number={count}  />
                 <button onClick={add}>+</button>
                 <button onClick={restart}>restart</button>
-       
-         
+  
  
           {listBox}
-            </div>
+
+          </div>
+         {joke}
+
+
+
         </div >
     )
 }
-

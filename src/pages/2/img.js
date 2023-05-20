@@ -27,8 +27,6 @@ export default function ContainerContact(props) {
     let imageStar = imgStar ? "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Gold_Star.svg/1024px-Gold_Star.svg.png" : "https://cdn3.iconfinder.com/data/icons/sympletts-free-sampler/128/star-512.png"
    let styles = props.item.openSpots <5 ? { color: 'red' }  : { color: 'black' }
     return (
-<div>
-<div className="button">press me</div>
         <div className="containerContact">
 
             <img  src={props.item.img} alt='Img' />
@@ -50,7 +48,7 @@ export default function ContainerContact(props) {
 
             </section >
         </div >
-        </div>
+       
 
     )
 }
