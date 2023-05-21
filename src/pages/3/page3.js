@@ -4,43 +4,39 @@ import Travel from "./travel";
 import travelData from "./travelData";
 
 export default function Page3() {
+  let travels = travelData.map((contact) => {
+    return <Travel item={contact} />;
+  });
 
-    let travels = travelData.map(contact =>
-        {
-       return (<Travel item={contact} />)
-        })
-        
-    let date = new Date();
-    let hours = date.getHours()
-    let minutes = date.getMinutes()
+  let date = new Date();
+  let hours = date.getHours();
+  let minutes = date.getMinutes();
 
-    let time = `${hours}:${minutes}`;
-    if (minutes < 10) {
-        time = `${hours}:0${minutes} `
-    }
-    let timeofday;
+  let time = `${hours}:${minutes}`;
+  if (minutes < 10) {
+    time = `${hours}:0${minutes} `;
+  }
+  let timeofday;
 
-    if (hours > 12 && hours < 18) {
-        timeofday = 'Its noon'
+  if (hours > 12 && hours < 18) {
+    timeofday = "Its noon";
+  } else {
+    timeofday = " Its morning";
+  }
 
-    }
-    else {
-        timeofday = " Its morning"
-    }
+  if (hours > 18) {
+    timeofday = "Its after noon";
+  }
 
-    if (hours > 18) {
-        timeofday = "Its after noon"
+  return (
+    <div>
+      <Header2 />
 
-    }
-
-    return (
-        <div>
-
-            <Header2 />
-
-            <h1> {time} {timeofday}</h1>
-                    {travels}
-
-        </div>
-    )
+      <h1>
+        {" "}
+        {time} {timeofday}
+      </h1>
+      {travels}
+    </div>
+  );
 }

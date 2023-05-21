@@ -1,38 +1,32 @@
 /*
 login
 */
-.form-login{
-
+.form-login {
   display: grid;
   justify-content: center;
   align-items: center;
   grid-template-columns: 150px;
   height: 1000px;
- 
 }
 
-.form-login input{
+.form-login input {
   height: 20px;
   margin: 10px 0 10px 0;
   width: fit-content;
-  
 }
-.input-checkbox{
+.input-checkbox {
   display: flex;
   align-items: center;
 
-gap: 10px;
-
+  gap: 10px;
 }
 /*
 
 */
 
 .container {
-
   display: flex;
   justify-content: center;
-
 }
 
 .container1 {
@@ -40,21 +34,19 @@ gap: 10px;
   flex-direction: column;
   align-items: center;
 
-  background: rgba(128, 128, 128, 0.291)
+  background: rgba(128, 128, 128, 0.291);
 }
 
 .container2 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 .imgDavid {
   display: flex;
   justify-content: center;
   background-color: blue;
-
 }
 
 .info {
@@ -78,8 +70,6 @@ img {
   display: flex;
   font-size: 30px;
   justify-content: center;
-
-
 }
 
 button {
@@ -87,19 +77,15 @@ button {
   background-color: rgb(0, 255, 251);
 }
 
-
-
 .button {
   display: flex;
   margin-top: 40px;
   gap: 10px;
-
 }
 
 .links img {
   width: 40px;
   height: 40px;
-
 }
 
 /*
@@ -117,7 +103,6 @@ page 2
   flex-direction: column;
   position: relative;
   justify-items: start;
-
 }
 
 .soldOut {
@@ -138,7 +123,6 @@ page 2
   width: 40px;
 }
 
-
 .containerHeader {
   display: flex;
   background-color: rgb(240, 240, 245);
@@ -149,7 +133,6 @@ page 2
   margin-bottom: 70px;
 }
 
-
 .containerHeader a {
   margin-left: 40px;
   text-decoration: none;
@@ -157,14 +140,11 @@ page 2
 }
 
 .containerHeader img {
-
   width: 80px;
   height: 80px;
-
 }
 
 .containerContact img {
-
   width: 500px;
   height: 400px;
 }
@@ -209,9 +189,6 @@ Page3
   display: grid;
   grid-template-columns: repeat(2fr 3);
   width: 500px;
-
-
-
 }
 
 .travels-container img {
@@ -241,17 +218,15 @@ main {
   display: flex;
   align-items: center;
   height: 65px;
-  background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+  background: linear-gradient(90deg, #672280 1.18%, #a626d3 100%);
   color: white;
   padding: 20px;
 }
-
 
 .header--title {
   font-size: 1.25rem;
   margin-right: auto;
 }
-
 
 .form {
   display: grid;
@@ -269,22 +244,18 @@ img {
   width: 400px;
   height: 400;
 }
-.memeImg{
-
+.memeImg {
   position: relative;
 }
-.memeImg img{
-
+.memeImg img {
   width: 800px;
   height: 800px;
 }
-.upper-text,.lower-text{
-
+.upper-text,
+.lower-text {
   font-size: 100px;
-
 }
-.upper-text{
-
+.upper-text {
   position: absolute;
   top: -1%;
   left: 50%;
@@ -300,18 +271,14 @@ img {
 page 5
 */
 
-
 .countNumber {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
-
 }
-.box12{
-  
+.box12 {
   height: 100px;
   width: 100px;
   border: black solid 10px;
-
 }
